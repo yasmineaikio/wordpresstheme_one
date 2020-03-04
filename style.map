@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "sass/style.css",
+	"sources": [
+		"sass/style.scss",
+		"sass/base/_base.scss",
+		"sass/partials/_header.scss"
+	],
+	"sourcesContent": [
+		"@import \"base/base\";\r\n@import \"partials/header\";\r\n",
+		"* {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\nbody {\r\n  background-color: grey;\r\n}\r\n\r\n.main {\r\n  display: flex;\r\n}\r\n",
+		"header {\r\n  background-color: yellow;\r\n  position: fixed;\r\n  padding: 20px;\r\n  height: 100vh;\r\n}\r\n"
+	],
+	"mappings": ";ACAA,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,CAAE;CACX;;;AAED,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,IAAK;CACxB;;;AAED,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAK;CACf;;;ACXD,AAAA,MAAM,CAAC;EACL,gBAAgB,EAAE,MAAO;EACzB,QAAQ,EAAE,KAAM;EAChB,OAAO,EAAE,IAAK;EACd,MAAM,EAAE,KAAM;CACf",
+	"names": []
+}
