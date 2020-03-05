@@ -21,3 +21,6 @@ function add_new_menu() {
   );
 }
 add_action( 'init', 'add_new_menu' );
+
+/* add support */
+add_post_type_support( 'page', 'excerpt' );

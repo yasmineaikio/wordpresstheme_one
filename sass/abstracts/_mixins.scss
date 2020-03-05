@@ -7,3 +7,19 @@
   display: flex;
   justify-content: space-between;
 }
+
+%light-border-top {
+  border-top: 1px solid $grey-color-opacity;
+}
+
+%light-border-bottom {
+  border-bottom: 1px solid $grey-color-opacity;
+}
+
+%dark-border-top {
+  border-top: 1px solid $black-color;
+}
+
+%dark-border-bottom {
+  border-bottom: 1px solid $black-color;
+}

@@ -11,6 +11,16 @@ footer ul, .first-content {
   justify-content: space-between;
 }
 
+/* line 11, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/abstracts/_mixins.scss */
+.second-content, .second-content .second-column .news:not(:first-child) {
+  border-top: 1px solid rgba(218, 201, 173, 0.5);
+}
+
+/* line 15, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/abstracts/_mixins.scss */
+.second-content {
+  border-bottom: 1px solid rgba(218, 201, 173, 0.5);
+}
+
 /* Box sizing rules */
 /* line 2, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/_reset.scss */
 *,
@@ -281,12 +291,16 @@ body.nav-active .nav .menu-item:nth-child(4) {
 /* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_main.scss */
 body {
   background-color: #fe5000;
+}
+
+/* line 3, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_main.scss */
+body h1, body h2, body h3 {
   font-family: "Playfair Display", serif;
 }
 
 /* line 6, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_main.scss */
-.main {
-  margin-left: 110px;
+body p {
+  font-family: "Raleway", sans-serif;
 }
 
 /* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_footer.scss */
@@ -307,20 +321,66 @@ footer ul a {
 .first-content {
   flex-direction: column;
   height: 100vh;
-  width: 50%;
+  width: 60%;
   margin-left: 5%;
   color: #FFFFFF;
-  padding: 2% 0;
+  padding: 4% 0 4% 4%;
 }
 
-/* line 10, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+/* line 9, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
 .first-content h1 {
   font-size: 5rem;
 }
 
-/* line 13, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+/* line 12, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
 .first-content p {
   font-size: 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+/* line 18, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+.second-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4%;
+}
+
+/* line 26, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+.second-content .second-column {
+  text-align: right;
+  width: 50%;
+  border-left: 1px solid rgba(218, 201, 173, 0.5);
+}
+
+/* line 31, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+.second-content .second-column .news {
+  padding: 3%;
+  margin-left: 3%;
+}
+
+/* line 35, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+.second-content .second-column .news a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 47, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+.third-content {
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 52, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+.third-content .first-column {
+  width: 50%;
+}
+
+/* line 55, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+.third-content .second-column {
+  background-color: #CB2A1E;
+  width: 50%;
 }
 
 /*# sourceMappingURL=../style.map */

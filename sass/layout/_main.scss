@@ -1,9 +1,13 @@
 body {
   background-color: $orange-color;
-  font-family: $font-headings;
+  h1,h2,h3 {
+    font-family: $font-headings;
+  }
+  p {
+    font-family: $breadtext;
+  }
 }
 
 .main {
   @extend %display-flex-and-wrap;
-  margin-left: 110px;
 }

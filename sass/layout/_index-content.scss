@@ -2,15 +2,58 @@
   @extend %display-flex-space-between;
   flex-direction: column;
   height: 100vh;
-  width: 50%;
+  width: 60%;
   margin-left: 5%;
   color: $white-color;
-  padding: 2% 0;
-
+  padding: 4% 0 4% 4%;
   h1{
     font-size: 5rem;
   }
   p {
     font-size: 2rem;
+    font-family: $font-headings;
+  }
+}
+
+.second-content {
+  @extend %light-border-top;
+  @extend %light-border-bottom;
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  padding: 4%;
+
+  .second-column {
+    text-align: right;
+    width:50%;
+    border-left: 1px solid $grey-color-opacity;
+
+    .news {
+      padding: 3%;
+      margin-left: 3%;
+
+      a {
+        color: $black-color;
+        text-decoration: none;
+      }
+
+      &:not(:first-child) {
+        @extend %light-border-top;
+      }
+    }
+  }
+}
+
+.third-content {
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
+
+  .first-column {
+    width:50%;
+  }
+  .second-column {
+    background-color: $red-color;
+    width:50%;
   }
 }
