@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/base/typography.css",
+	"sources": [
+		"../sass/base/typography.scss"
+	],
+	"sourcesContent": [
+		""
+	],
+	"mappings": "",
+	"names": []
+}

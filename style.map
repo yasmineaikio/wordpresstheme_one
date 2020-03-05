@@ -3,14 +3,34 @@
 	"file": "sass/style.css",
 	"sources": [
 		"sass/style.scss",
-		"sass/base/_base.scss",
-		"sass/partials/_header.scss"
+		"sass/abstracts/_variables.scss",
+		"sass/abstracts/_functions.scss",
+		"sass/abstracts/_mixins.scss",
+		"sass/base/_reset.scss",
+		"sass/base/_typography.scss",
+		"sass/layout/_header.scss",
+		"sass/layout/_main.scss",
+		"sass/layout/_footer.scss",
+		"sass/components/_buttons.scss",
+		"sass/pages/_home.scss",
+		"sass/themes/_theme.scss",
+		"sass/themes/_admin.scss"
 	],
 	"sourcesContent": [
-		"@import \"base/base\";\r\n@import \"partials/header\";\r\n",
-		"* {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\nbody {\r\n  background-color: grey;\r\n}\r\n\r\n.main {\r\n  display: flex;\r\n}\r\n",
-		"header {\r\n  background-color: yellow;\r\n  position: fixed;\r\n  padding: 20px;\r\n  height: 100vh;\r\n}\r\n"
+		"@import 'abstracts/variables';\r\n@import 'abstracts/functions';\r\n@import 'abstracts/mixins';\r\n\r\n@import 'base/reset';\r\n@import 'base/typography';\r\n\r\n@import 'layout/header';\r\n@import 'layout/main';\r\n@import 'layout/footer';\r\n\r\n@import 'components/buttons';\r\n\r\n@import 'pages/home';\r\n\r\n@import 'themes/theme';\r\n@import 'themes/admin';\r\n",
+		"$yellow-color: #DB702A;\r\n$grey-color: #eeeeee;\r\n",
+		"",
+		"%display-flex-and-wrap {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n",
+		"/* Box sizing rules */\r\n*,\r\n*::before,\r\n*::after {\r\n  box-sizing: border-box;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n/* Remove default padding */\r\nul[class],\r\nol[class] {\r\n  padding: 0;\r\n}\r\n\r\n/* Remove default margin */\r\nbody,\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\np,\r\nul[class],\r\nol[class],\r\nli,\r\nfigure,\r\nfigcaption,\r\nblockquote,\r\ndl,\r\ndd {\r\n  margin: 0;\r\n}\r\n\r\n/* Set core body defaults */\r\nbody {\r\n  min-height: 100vh;\r\n  scroll-behavior: smooth;\r\n  text-rendering: optimizeSpeed;\r\n  line-height: 1.5;\r\n}\r\n\r\n/* Remove list styles on ul, ol elements with a class attribute */\r\nul[class],\r\nol[class] {\r\n  list-style: none;\r\n}\r\n\r\n/* A elements that don't have a class get default styles */\r\na:not([class]) {\r\n  text-decoration-skip-ink: auto;\r\n}\r\n\r\n/* Make images easier to work with */\r\nimg {\r\n  max-width: 100%;\r\n  display: block;\r\n}\r\n\r\n/* Natural flow and rhythm in articles by default */\r\narticle > * + * {\r\n  margin-top: 1em;\r\n}\r\n\r\n/* Inherit fonts for inputs and buttons */\r\ninput,\r\nbutton,\r\ntextarea,\r\nselect {\r\n  font: inherit;\r\n}\r\n\r\n/* Remove all animations and transitions for people that prefer not to see them */\r\n@media (prefers-reduced-motion: reduce) {\r\n  * {\r\n    animation-duration: 0.01ms !important;\r\n    animation-iteration-count: 1 !important;\r\n    transition-duration: 0.01ms !important;\r\n    scroll-behavior: auto !important;\r\n  }\r\n}\r\n",
+		"$font-headings: Helvetica, sans-serif;\r\n",
+		"header {\r\n  background-color: $yellow-color;\r\n  position: fixed;\r\n  padding: 20px;\r\n  height: 100vh;\r\n  width:110px;\r\n}\r\n",
+		"body {\r\n  background-color: $grey-color;\r\n  font-family: $font-headings;\r\n}\r\n\r\n.main {\r\n  @extend %display-flex-and-wrap;\r\n  margin-left: 110px;\r\n}\r\n",
+		"footer {\r\n  @extend %display-flex-and-wrap;\r\n  padding: 30px;\r\n  margin-left: 110px;\r\n  justify-content: center;\r\n\r\n    .footer1 {\r\n      margin-right: 30px;\r\n    }\r\n}\r\n",
+		"",
+		"",
+		"",
+		""
 	],
-	"mappings": ";ACAA,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,CAAE;CACX;;;AAED,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,IAAK;CACxB;;;AAED,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAK;CACf;;;ACXD,AAAA,MAAM,CAAC;EACL,gBAAgB,EAAE,MAAO;EACzB,QAAQ,EAAE,KAAM;EAChB,OAAO,EAAE,IAAK;EACd,MAAM,EAAE,KAAM;CACf",
+	"mappings": ";AOKA,AJLA,KIKK,ECLL,ALAA,MKAM,CLAiB;EACrB,OAAO,EAAE,IAAK;EACd,SAAS,EAAE,IAAK;CACjB;;ACHD,sBAAsB;;AACtB,AAAA,CAAC;AACD,AAAC,CAAA,AAAA,QAAQ;AACT,AAAC,CAAA,AAAA,OAAO,CAAC;EACP,UAAU,EAAE,UAAW;EACvB,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,CAAE;CACX;;AAED,4BAA4B;;AAC5B,AAAQ,EAAN,CAAA,AAAA,KAAC,AAAA;AACH,AAAQ,EAAN,CAAA,AAAA,KAAC,AAAA,EAAO;EACR,OAAO,EAAE,CAAE;CACZ;;AAED,2BAA2B;;AAC3B,AAAA,IAAI;AACJ,AAAA,EAAE;AACF,AAAA,EAAE;AACF,AAAA,EAAE;AACF,AAAA,EAAE;AACF,AAAA,CAAC;AACD,AAAQ,EAAN,CAAA,AAAA,KAAC,AAAA;AACH,AAAQ,EAAN,CAAA,AAAA,KAAC,AAAA;AACH,AAAA,EAAE;AACF,AAAA,MAAM;AACN,AAAA,UAAU;AACV,AAAA,UAAU;AACV,AAAA,EAAE;AACF,AAAA,EAAE,CAAC;EACD,MAAM,EAAE,CAAE;CACX;;AAED,4BAA4B;;AAC5B,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,KAAM;EAClB,eAAe,EAAE,MAAO;EACxB,cAAc,EAAE,aAAc;EAC9B,WAAW,EAAE,GAAI;CAClB;;AAED,kEAAkE;;AAClE,AAAQ,EAAN,CAAA,AAAA,KAAC,AAAA;AACH,AAAQ,EAAN,CAAA,AAAA,KAAC,AAAA,EAAO;EACR,UAAU,EAAE,IAAK;CAClB;;AAED,2DAA2D;;AAC3D,AAAa,CAAZ,AAAA,IAAK,EAAA,AAAA,AAAM,KAAL,AAAA,GAAQ;EACb,wBAAwB,EAAE,IAAK;CAChC;;AAED,qCAAqC;;AACrC,AAAA,GAAG,CAAC;EACF,SAAS,EAAE,IAAK;EAChB,OAAO,EAAE,KAAM;CAChB;;AAED,oDAAoD;;AACpD,AAAc,OAAP,GAAG,CAAC,GAAG,CAAC,CAAC;EACd,UAAU,EAAE,GAAI;CACjB;;AAED,0CAA0C;;AAC1C,AAAA,KAAK;AACL,AAAA,MAAM;AACN,AAAA,QAAQ;AACR,AAAA,MAAM,CAAC;EACL,IAAI,EAAE,OAAQ;CACf;;AAED,kFAAkF;AAClF,MAAM,EAAL,sBAAsB,EAAE,MAAM;;EAC7B,AAAA,CAAC,CAAC;IACA,kBAAkB,EAAE,iBAAkB;IACtC,yBAAyB,EAAE,YAAa;IACxC,mBAAmB,EAAE,iBAAkB;IACvC,eAAe,EAAE,eAAgB;GAClC;;;;AE9EH,AAAA,MAAM,CAAC;EACL,gBAAgB,ELDH,OAAO;EKEpB,QAAQ,EAAE,KAAM;EAChB,OAAO,EAAE,IAAK;EACd,MAAM,EAAE,KAAM;EACd,KAAK,EAAC,KAAM;CACb;;;ACND,AAAA,IAAI,CAAC;EACH,gBAAgB,ENAL,OAAO;EMClB,WAAW,EFFG,SAAS,EAAE,UAAU;CEGpC;;;AAED,AAAA,KAAK,CAAC;EAEJ,WAAW,EAAE,KAAM;CACpB;;;ACRD,AAAA,MAAM,CAAC;EAEL,OAAO,EAAE,IAAK;EACd,WAAW,EAAE,KAAM;EACnB,eAAe,EAAE,MAAO;CAKzB;;;AATD,AAMI,MANE,CAMF,QAAQ,CAAC;EACP,YAAY,EAAE,IAAK;CACpB",
 	"names": []
 }

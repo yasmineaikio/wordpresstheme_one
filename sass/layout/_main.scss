@@ -1,0 +1,9 @@
+body {
+  background-color: $grey-color;
+  font-family: $font-headings;
+}
+
+.main {
+  @extend %display-flex-and-wrap;
+  margin-left: 110px;
+}

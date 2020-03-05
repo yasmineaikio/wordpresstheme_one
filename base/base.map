@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "../sass/base/base.css",
+	"sources": [
+		"../sass/base/base.scss",
+		"../sass/base/colors.scss"
+	],
+	"sourcesContent": [
+		"@import \"colors\";\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\nbody {\r\n  background-color: $grey-color;\r\n}\r\n\r\n.main {\r\n  display: flex;\r\n}\r\n",
+		"$yellow-color: #DB702A;\r\n$grey-color: #eeeeee;\r\n"
+	],
+	"mappings": ";AAEA,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,CAAE;CACX;;;AAED,AAAA,IAAI,CAAC;EACH,gBAAgB,ECPL,OAAO;CDQnB;;;AAED,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAK;CACf",
+	"names": []
+}

@@ -1,25 +1,130 @@
-/* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/yasmineaikio/sass/base/_base.scss */
-* {
+/* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/abstracts/_mixins.scss */
+.main, footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Box sizing rules */
+/* line 2, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/_reset.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-/* line 6, C:/xampp/htdocs/yasmineaikio/wp-content/themes/yasmineaikio/sass/base/_base.scss */
+/* Remove default padding */
+/* line 11, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/_reset.scss */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+/* line 17, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/_reset.scss */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+/* line 35, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/_reset.scss */
 body {
-  background-color: grey;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
-/* line 10, C:/xampp/htdocs/yasmineaikio/wp-content/themes/yasmineaikio/sass/base/_base.scss */
-.main {
-  display: flex;
+/* Remove list styles on ul, ol elements with a class attribute */
+/* line 43, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/_reset.scss */
+ul[class],
+ol[class] {
+  list-style: none;
 }
 
-/* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/yasmineaikio/sass/partials/_header.scss */
+/* A elements that don't have a class get default styles */
+/* line 49, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/_reset.scss */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+/* line 54, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/_reset.scss */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+/* line 60, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/_reset.scss */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+/* line 65, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/_reset.scss */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  /* line 74, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/_reset.scss */
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 header {
-  background-color: yellow;
+  background-color: #DB702A;
   position: fixed;
   padding: 20px;
   height: 100vh;
+  width: 110px;
+}
+
+/* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_main.scss */
+body {
+  background-color: #eeeeee;
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 6, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_main.scss */
+.main {
+  margin-left: 110px;
+}
+
+/* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_footer.scss */
+footer {
+  padding: 30px;
+  margin-left: 110px;
+  justify-content: center;
+}
+
+/* line 7, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_footer.scss */
+footer .footer1 {
+  margin-right: 30px;
 }
 
 /*# sourceMappingURL=../style.map */

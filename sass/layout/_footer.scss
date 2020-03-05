@@ -1,0 +1,10 @@
+footer {
+  @extend %display-flex-and-wrap;
+  padding: 30px;
+  margin-left: 110px;
+  justify-content: center;
+
+    .footer1 {
+      margin-right: 30px;
+    }
+}

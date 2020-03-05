@@ -1,0 +1,17 @@
+/* line 3, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/base.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 8, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/base.scss */
+body {
+  background-color: #eeeeee;
+}
+
+/* line 12, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/base/base.scss */
+.main {
+  display: flex;
+}
+
+/*# sourceMappingURL=../../base/base.map */

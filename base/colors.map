@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/base/colors.css",
+	"sources": [
+		"../sass/base/colors.scss"
+	],
+	"sourcesContent": [
+		"$yellow-color: #DB702A;\r\n$grey-color: #eeeeee;\r\n"
+	],
+	"mappings": "",
+	"names": []
+}

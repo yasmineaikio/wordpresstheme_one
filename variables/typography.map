@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/variables/typography.css",
+	"sources": [
+		"../sass/variables/typography.scss"
+	],
+	"sourcesContent": [
+		"$font-headings: Helvetica, sans-serif;\r\n"
+	],
+	"mappings": "",
+	"names": []
+}
