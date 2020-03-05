@@ -1,7 +1,14 @@
+/* --------------------- colors ---------------------------------*/
 /* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/abstracts/_mixins.scss */
-.main, footer {
+.main {
   display: flex;
   flex-wrap: wrap;
+}
+
+/* line 6, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/abstracts/_mixins.scss */
+footer ul, .first-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Box sizing rules */
@@ -139,7 +146,7 @@ select {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: #CB2A1E;
+  background: #5d285f;
   z-index: -1;
   transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
   transform: translateX(0%) translateY(-100%);
@@ -147,7 +154,7 @@ select {
 
 /* line 47, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 .nav:after {
-  background: #DB702A;
+  background: #fecc00;
   transition-delay: 0s;
 }
 
@@ -180,10 +187,16 @@ select {
 }
 
 /* line 72, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+.nav .menu-item a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* line 76, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 .nav .menu-item:before {
   content: "";
   position: absolute;
-  background: #000000;
+  background: #FFFFFF;
   width: 20px;
   height: 1px;
   top: 100%;
@@ -192,83 +205,83 @@ select {
   z-index: -1;
 }
 
-/* line 84, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 88, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 .nav .menu-item:hover:before {
   width: 100%;
 }
 
-/* line 95, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 99, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .menu-icon__line {
   background-color: #FFFFFF;
   transform: translateX(0px) rotate(-45deg);
 }
 
-/* line 99, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 103, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .menu-icon__line-left {
   transform: translateX(1px) rotate(45deg);
 }
 
-/* line 102, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 106, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .menu-icon__line-right {
   transform: translateX(-2px) rotate(45deg);
 }
 
-/* line 106, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 110, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .nav {
   visibility: visible;
 }
 
-/* line 108, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 112, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .nav:before, body.nav-active .nav:after {
   transform: translateX(0%) translateY(0%);
 }
 
-/* line 111, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 115, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .nav:after {
   transition-delay: .1s;
 }
 
-/* line 114, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 118, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .nav:before {
   transition-delay: 0s;
 }
 
-/* line 117, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 121, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .nav .menu-item {
   opacity: 1;
   transform: translateX(0%);
   transition: opacity .3s ease, transform .3s ease, color .3s ease;
 }
 
-/* line 122, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 126, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .nav .menu-item:nth-child(0) {
   transition-delay: 0.5s;
 }
 
-/* line 122, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 126, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .nav .menu-item:nth-child(1) {
   transition-delay: 0.6s;
 }
 
-/* line 122, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 126, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .nav .menu-item:nth-child(2) {
   transition-delay: 0.7s;
 }
 
-/* line 122, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 126, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .nav .menu-item:nth-child(3) {
   transition-delay: 0.8s;
 }
 
-/* line 122, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
+/* line 126, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_header.scss */
 body.nav-active .nav .menu-item:nth-child(4) {
   transition-delay: 0.9s;
 }
 
 /* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_main.scss */
 body {
-  background-color: #DAC9AD;
-  font-family: Helvetica, sans-serif;
+  background-color: #fe5000;
+  font-family: "Playfair Display", serif;
 }
 
 /* line 6, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_main.scss */
@@ -278,14 +291,36 @@ body {
 
 /* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_footer.scss */
 footer {
-  padding: 30px;
-  margin-left: 110px;
-  justify-content: center;
+  padding: 10px;
+  background-color: #DAC9AD;
+  font-family: "Raleway", sans-serif;
 }
 
-/* line 7, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_footer.scss */
-footer .footer1 {
-  margin-right: 30px;
+/* line 9, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_footer.scss */
+footer ul a {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 1, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+.first-content {
+  flex-direction: column;
+  height: 100vh;
+  width: 50%;
+  margin-left: 5%;
+  color: #FFFFFF;
+  padding: 2% 0;
+}
+
+/* line 10, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+.first-content h1 {
+  font-size: 5rem;
+}
+
+/* line 13, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
+.first-content p {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=../style.map */

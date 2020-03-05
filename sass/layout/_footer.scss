@@ -1,10 +1,15 @@
 footer {
-  @extend %display-flex-and-wrap;
-  padding: 30px;
-  margin-left: 110px;
-  justify-content: center;
+  padding:10px;
+  background-color: $grey-color;
+  font-family: $breadtext;
 
-    .footer1 {
-      margin-right: 30px;
+  ul {
+    @extend %display-flex-space-between;
+
+    a {
+      color: $black-color;
+      text-transform: uppercase;
+      text-decoration: none;
     }
+  }
 }

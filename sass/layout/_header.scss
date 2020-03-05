@@ -39,13 +39,13 @@ $transition--length: .8;
 		position: fixed;
 		width:$width;
 		height:$height;
-		background: $red-color;
+		background: $purple-color;
 		z-index: -1;
 		transition: transform $transition--easing $transition--length + s;
 		transform: translateX(0%) translateY(-100%);
 	}
 	&:after{
-		background: $orange-color;
+		background: $yellow-color;
 		transition-delay: 0s;
 	}
 	&:before{
@@ -69,10 +69,14 @@ $transition--length: .8;
 		transform: translate(0%, 100%);
 		transition: opacity .2s ease, transform .3s ease;
 		margin-right: 25px;
+		a{
+			text-decoration: none;
+			color: $white-color;
+		}
 		&:before{
 			content: "";
 			position: absolute;
-			background: $black-color;
+			background: $white-color;
 			width: 20px;
 			height: 1px;
 			top: 100%;
