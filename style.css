@@ -367,7 +367,7 @@ footer ul a {
 
 /* line 47, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
 .third-content {
-  padding-top: 3%;
+  margin-top: 3%;
   display: flex;
   justify-content: space-between;
 }
@@ -379,7 +379,7 @@ footer ul a {
 
 /* line 55, C:/xampp/htdocs/yasmineaikio/wp-content/themes/wordpresstheme_one/sass/layout/_index-content.scss */
 .third-content .second-column {
-  background-color: #CB2A1E;
+  background-color: #fecc00;
   width: 50%;
 }
 
